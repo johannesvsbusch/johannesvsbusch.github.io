@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication_types | Johannes V. S. Busch</title>
+    <link>https://johannesvsbusch.github.io/publication_types/</link>
+      <atom:link href="https://johannesvsbusch.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://johannesvsbusch.github.io/media/icon_hu54742a9ac67ac613fa3a829bdbddb009_5126_512x512_fill_lanczos_center_3.png</url>
+      <title>Publication_types</title>
+      <link>https://johannesvsbusch.github.io/publication_types/</link>
+    </image>
+    
+  </channel>
+</rss>

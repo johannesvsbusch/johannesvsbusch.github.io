@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News | Johannes V. S. Busch</title>
+    <link>https://johannesvsbusch.github.io/news/</link>
+      <atom:link href="https://johannesvsbusch.github.io/news/index.xml" rel="self" type="application/rss+xml" />
+    <description>News</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://johannesvsbusch.github.io/media/icon_hu54742a9ac67ac613fa3a829bdbddb009_5126_512x512_fill_lanczos_center_3.png</url>
+      <title>News</title>
+      <link>https://johannesvsbusch.github.io/news/</link>
+    </image>
+    
+    <item>
+      <title>We started LASR Lab</title>
+      <link>https://johannesvsbusch.github.io/news/started_lasr/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://johannesvsbusch.github.io/news/started_lasr/</guid>
+      <description>&lt;p&gt;I am moving to a new job.&lt;/p&gt;
+&lt;p&gt;After 3 years at the &lt;a href=&#34;https://cn.ifn.et.tu-dresden.de&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Deutsche Telekom Chair of Communication Networks&lt;/a&gt;, I am starting as a PhD student at the newfound the &lt;a href=&#34;lasr.org&#34;&gt;Learning, Adaptive Systems, and Robotics (LASR) Lab&lt;/a&gt; with &lt;a href=&#34;robertocalandra.com&#34;&gt;Prof. Calandra&amp;rsquo;s&lt;/a&gt; as my advisor.&lt;/p&gt;
+&lt;p&gt;My research will focus on model-based and hierarchical reinforcement learning.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
