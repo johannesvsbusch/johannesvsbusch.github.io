@@ -1,0 +1,6 @@
+{{- /* Author list of a publication. The entry `me` is replaced by the name in data/profile.yaml. */ -}}
+{{- $names := slice -}}
+{{- range .Params.authors -}}
+  {{- $names = $names | append (cond (eq . "me") hugo.Data.profile.name .) -}}
+{{- end -}}
+{{- delimit $names ", " -}}

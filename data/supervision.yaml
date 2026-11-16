@@ -1,0 +1,89 @@
+# supervised students. One record per thesis, project or internship.
+# `students` is a list, so group work can name several people.
+# Currently not shown on the site. To show it, add a group with `source: supervision`
+# to a `data-list` section in content/_index.md, e.g.
+#   fields: { title: thesis, detail: students, meta: type }
+- students: [Xianran Liu]
+  thesis: Deep Reinforcement Learning for Handovers in Mobile Networks
+  type: Study Thesis
+- students: [Nerea Fernandez-Sanchez]
+  thesis: Joint Optimization of Traffic Signaling and Vehicle Speed Advise in V2I-Enabled Traffic with Deep Reinforcement Learning
+  type: Bachelor Thesis
+- students: [Mao Xinwei]
+  thesis: Investigation of Smart Routing and Queue Management for on the Fly Processing
+  type: Master Thesis
+- students: [Adrian Bretschneider-Perez]
+  thesis: AI aided robot remote control
+  type: Diploma Thesis
+- students: [Hassine Chahed]
+  thesis: Autonomous Transfer Learning Through the Use of a Context-Driven Artifact Description Language
+  type: Internship
+- students: [Yueyue Gao]
+  thesis: Investigation of Deep Reinforcement Learning for Routing in Software-defined Networks
+  type: Master Thesis
+- students: [Robert Voelckner]
+  thesis: Reinforcement Learning for Joint Control of Vehicles and Infrastructure in V2I-Enabled Traffic
+  type: Master Thesis
+- students: [Xianran Liu]
+  thesis: The Impact of Network Latency on Autonomous Traffic Controlled by Deep Reinforcement Learning
+  type: Diploma Thesis
+- students: [Anton Haas]
+  thesis: "Amortizing Diffusion Planning Costs"
+  type: Project
+- students: [Elia Rühle]
+  thesis: "Curious Exploration using Diffusion"
+  type: Project
+- students: [Christoph Rosenau]
+  thesis: "Data Augmentation with Diffusion Planner for Downstream Reward Maximization"
+  type: Project
+- students: [Florian Schmidt]
+  thesis: "Deterministic 3D Path Planning Using Hybrid A* for Roving Placement in Robot-Assisted Manufacturing of Truss Structures"
+  type: Bachelor Thesis
+- students: [Sravani Kaviti]
+  thesis: "Diffusion Data Augmentation"
+  type: Project
+- students: [Niclas Klawitter]
+  thesis: "Diffusion Skill Learning"
+  type: Project
+- students: [Lucas Fabian Naumann]
+  thesis: "Goal-Reaching with Diffusion"
+  type: Project
+- students: [Zsombor Boga]
+  thesis: "Inpainting Conditioning"
+  type: Project
+- students: [Yahor Paromau]
+  thesis: "Language Conditioned Diffusion Planning"
+  type: Project
+- students: [Christina Montasser Saad Naguib]
+  thesis: "Latent Diffusion Planning"
+  type: Project
+- students: [Yahor Paromau]
+  thesis: "Latent Spaces for planner-policy coupling (wiop)"
+  type: Master Thesis
+- students: [Alexander Phieler]
+  thesis: "Learning-Based Loco-Manipulation with a Humanoid Robot"
+  type: Master Thesis
+- students: [Elia Rühle]
+  thesis: "Leveraging Latent Space Structure in Predictive World Models for Long-Horizon Planning"
+  type: Master Thesis
+- students: [Aaron Kutzer]
+  thesis: "Maximizing Downstream Rewards through Inductive Biases in the architecture"
+  type: Project
+- students: [Kirill Dzhunkovskii, Igor Kuznetsov, Aisultan Tabuldin]
+  thesis: "Offline RL with Touch Datasets"
+  type: Project
+- students: [Alexander Phieler]
+  thesis: "RL for Autonomous Car Racing"
+  type: Project
+- students: [Musa Ulusoy, Man-Ho Tsui]
+  thesis: "Skill Learning using Diffusion"
+  type: Project
+- students: [Sravani Kaviti, Bhavani Ravi]
+  thesis: "Tactile Data Augmentation with Diffusion"
+  type: Project
+- students: [Azin Ghalenoei]
+  thesis: "TGDP in visual space"
+  type: Project
+- students: [Fedor Grigoryevich Pogulskiy]
+  thesis: "Trajectory Diffusion in MARL"
+  type: Project

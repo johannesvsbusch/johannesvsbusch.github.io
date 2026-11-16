@@ -1,0 +1,10 @@
+{{- /* One publication as a citation line with its buttons. Used in lists. */ -}}
+<article class="citation">
+  <p>
+    {{ partial "authors.html" . }} ({{ .Date.Year }}).
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>.
+    <em>{{ .Params.venue.short }}</em>{{ with .Params.status }} ({{ . }}){{ end }}.
+    {{ with .Params.award }}<span class="award">{{ partial "icon.html" "award" }}{{ . }}</span>{{ end }}
+  </p>
+  {{ partial "pub-links.html" . }}
+</article>

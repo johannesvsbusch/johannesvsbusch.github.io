@@ -1,0 +1,45 @@
+# Who you are: shown in the top section of the homepage.
+name: Johannes V. S. Busch
+role: PhD Student
+affiliation:
+  name: Learning, Adaptive Systems, and Robotics Lab
+  url: https://lasr.org
+
+# Markdown is allowed in the bio. Separate paragraphs with an empty line.
+bio: |
+  I am a PhD student at the [Learning, Adaptive Systems, and Robotics (LASR) Lab](https://lasr.org) at [TU Dresden](https://tu-dresden.de), advised by [Prof. Roberto Calandra](https://robertocalandra.com). I work on diffusion planning for decision making, and I am particularly interested in learning from mixed-quality data, long-horizon planning, and hierarchical models. I apply these planners to robotic manipulation using touch sensing.
+
+  Before joining LASR, I worked with [Prof. Frank Fitzek](https://cn.ifn.et.tu-dresden.de/chair/staff/fitzek) at the [Deutsche Telekom Chair of Communication Networks](https://cn.ifn.et.tu-dresden.de) on reinforcement learning for traffic control and communication networks.
+
+# Icon links under the photo. `icon` is a file name in assets/icons/ (without .svg).
+links:
+  - icon: email
+    label: Contact
+    url: '#contact'
+  - icon: google-scholar
+    label: Google Scholar
+    url: https://scholar.google.de/citations?user=cK0DA9YAAAAJ&hl=en
+  - icon: github
+    label: GitHub
+    url: https://github.com/johannesvsbusch
+  - icon: linkedin
+    label: LinkedIn
+    url: https://linkedin.com/in/johannes-busch
+
+interests:
+  - Generative Planning
+  - Reinforcement Learning
+  - Model-Predictive Control
+  - Robotic Systems
+  - Touch Sensing
+  - Intelligent Transportation Systems
+  - Communication Networks
+
+# Leave out `end` for a degree that is still in progress.
+education:
+  - degree: PhD in Computer Science
+    institution: Technische Universität Dresden
+    start: 2023
+  - degree: Dipl.-Ing. in Electrical Engineering
+    institution: Technische Universität Dresden
+    end: 2019

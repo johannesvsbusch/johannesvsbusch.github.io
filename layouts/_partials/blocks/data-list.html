@@ -1,0 +1,38 @@
+{{- /*
+  A section made of one or more groups of rows.
+  Each group reads a list of records from data/<source>.yaml and maps record fields
+  onto three display slots:
+    title   main text of the row (becomes a link if the record has a `url`)
+    detail  smaller line under the title (optional)
+    meta    muted text on the right, e.g. a year (optional)
+  A group may also set:
+    heading               sub-headline above the group
+    meta_fallback         another field to use for `meta` when the record has none
+    meta_fallback_prefix  text put in front of that fallback value
+  Lists (e.g. several years) are joined with commas.
+*/ -}}
+{{ range .groups }}
+  {{ $group := . }}
+  {{ $rows := index hugo.Data .source }}
+  {{ if not $rows }}{{ errorf "data-list: data/%s.yaml is missing or empty" .source }}{{ end }}
+
+  {{ with .heading }}<h3>{{ . }}</h3>{{ end }}
+  <ul class="rows">
+    {{ range $rows }}
+      {{ $row := . }}
+      {{ $title := index $row $group.fields.title }}
+      {{ $detail := "" }}{{ with $group.fields.detail }}{{ $detail = index $row . }}{{ end }}
+      {{ $meta := "" }}{{ with $group.fields.meta }}{{ $meta = index $row . }}{{ end }}
+      {{ if and (not $meta) $group.meta_fallback }}
+        {{ with index $row $group.meta_fallback }}{{ $meta = printf "%s%v" (default "" $group.meta_fallback_prefix) . }}{{ end }}
+      {{ end }}
+      <li>
+        <div>
+          {{ if $row.url }}<a href="{{ $row.url }}">{{ $title }}</a>{{ else }}{{ $title }}{{ end }}
+          {{ with $detail }}<small>{{ if reflect.IsSlice . }}{{ delimit . ", " }}{{ else }}{{ . }}{{ end }}</small>{{ end }}
+        </div>
+        {{ with $meta }}<span class="meta">{{ if reflect.IsSlice . }}{{ delimit . ", " }}{{ else }}{{ . }}{{ end }}</span>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

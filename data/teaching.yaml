@@ -1,0 +1,11 @@
+# courses taught. One record per course.
+- course: Machine Learning for Robotics
+  terms: [SS24, SS25, SS26]
+- course: Robot Learning Seminar
+  terms: [WS24/25, SS25, WS25/26]
+- course: Fundamentals of Electrical Engineering 1
+  terms: [WS20/21]
+- course: Fundamentals of Electrical Engineering 2
+  terms: [SS21]
+- course: Communication Networks 3
+  terms: [WS20/21, WS21/22]

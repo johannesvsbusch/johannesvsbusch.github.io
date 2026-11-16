@@ -1,0 +1,6 @@
+{{- /* All publications from content/publications/, newest first. */ -}}
+<div class="publications">
+  {{ range (where site.RegularPages "Section" "publications").ByDate.Reverse }}
+    {{ partial "citation.html" . }}
+  {{ end }}
+</div>

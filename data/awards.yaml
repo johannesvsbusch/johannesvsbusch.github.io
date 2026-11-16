@@ -1,0 +1,11 @@
+# awards and grants. One record per award.
+- title: Best Poster Award for "Planning to Explore with Diffusion Models"
+  awarder: Eastern European Machine Learning Summer School (EEML)
+  year: 2024
+- title: Prize for Outstanding Final Thesis for "Deep Reinforcement Learning for Traffic Control"
+  awarder: Saxonian Center of Telecommunication
+  year: 2020
+- title: Best Paper Award for "Optimised Traffic Light Management Through Reinforcement Learning"
+  awarder: IEEE Open Journal of Intelligent Transportation Systems
+  year: 2020
+  url: /publication/ojits_2020/

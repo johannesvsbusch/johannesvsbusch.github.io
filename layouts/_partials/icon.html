@@ -1,0 +1,6 @@
+{{- /* Inlines assets/icons/<name>.svg. Usage: {{ partial "icon.html" "github" }} */ -}}
+{{- with resources.Get (printf "icons/%s.svg" .) -}}
+  {{- .Content | safeHTML -}}
+{{- else -}}
+  {{- errorf "icon.html: assets/icons/%s.svg does not exist" . -}}
+{{- end -}}

@@ -1,0 +1,11 @@
+{{- /* Top bar: site name on the left, menu from hugo.yaml on the right. */ -}}
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="/">{{ site.Title }}</a>
+    <nav>
+      {{ range site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

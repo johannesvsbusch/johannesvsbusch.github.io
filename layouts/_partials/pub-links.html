@@ -1,0 +1,15 @@
+{{- /* Buttons of a publication: its own links (e.g. PDF), BibTeX, DOI. */ -}}
+<div class="pub-links">
+  {{ range .Params.links }}
+    <a href="{{ .url }}">{{ partial "icon.html" "pdf" }}{{ .name }}</a>
+  {{ end }}
+  {{ with .Params.doi }}
+    <a href="https://doi.org/{{ . }}">{{ partial "icon.html" "link" }}DOI</a>
+  {{ end }}
+  {{ with .Resources.GetMatch "cite.bib" }}
+    <details>
+      <summary>{{ partial "icon.html" "cite" }}Cite</summary>
+      <pre>{{ .Content | strings.TrimSpace }}</pre>
+    </details>
+  {{ end }}
+</div>

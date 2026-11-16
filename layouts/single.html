@@ -1,0 +1,16 @@
+{{- /* The page of a single publication (content/publications/<name>/index.md). */ -}}
+{{ define "main" }}
+  <article class="paper">
+    <h1>{{ .Title }}</h1>
+    <p class="byline">{{ partial "authors.html" . }}</p>
+    <p class="byline"><em>{{ .Params.venue.name }}</em>, {{ .Date.Year }}{{ with .Params.status }} ({{ . }}){{ end }}</p>
+    {{ with .Params.award }}<p><span class="award">{{ partial "icon.html" "award" }}{{ . }}</span></p>{{ end }}
+    {{ partial "pub-links.html" . }}
+
+    {{ with .Params.abstract }}
+      <h2>Abstract</h2>
+      <p>{{ . }}</p>
+    {{ end }}
+    {{ .Content }}
+  </article>
+{{ end }}

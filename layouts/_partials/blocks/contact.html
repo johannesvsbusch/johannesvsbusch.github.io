@@ -1,0 +1,4 @@
+{{- /* Contact section. Content: data/contact.yaml */ -}}
+{{- $c := hugo.Data.contact -}}
+<p>{{ $c.text }}</p>
+<p class="email">{{ partial "icon.html" "envelope" }} {{ $c.email }}</p>

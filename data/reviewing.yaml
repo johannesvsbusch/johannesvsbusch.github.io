@@ -1,0 +1,10 @@
+# reviewing activity. One record per venue.
+# `years` lists the years reviewed for; `count` is the number of reviews where years are not recorded.
+- venue: Conference on Robot Learning (CoRL)
+  years: [2026]
+- venue: Conference on Neural Information Processing Systems (NeurIPS)
+  years: [2024]
+- venue: IEEE European Wireless
+  years: [2021, 2022]
+- venue: IEEE Systems Journal
+  count: 2

@@ -1,0 +1,49 @@
+{{- /* Top section: photo, name and links on the left; bio, interests, education on the right.
+       Content: data/profile.yaml and assets/img/avatar.jpg */ -}}
+{{- $p := hugo.Data.profile -}}
+<div class="split profile">
+  <aside class="sidebar">
+    {{ with resources.Get "img/avatar.jpg" }}
+      {{ $img := .Fill "448x448 Center" }}
+      <img class="avatar" src="{{ $img.RelPermalink }}" width="224" height="224" alt="{{ $p.name }}">
+    {{ end }}
+    <h1>{{ $p.name }}</h1>
+    <p class="role">{{ $p.role }}</p>
+    {{ with $p.affiliation }}
+      <p class="affiliation"><a href="{{ .url }}">{{ .name }}</a></p>
+    {{ end }}
+    <div class="social">
+      {{ range $p.links }}
+        <a href="{{ .url }}" aria-label="{{ .label }}" title="{{ .label }}">{{ partial "icon.html" .icon }}</a>
+      {{ end }}
+    </div>
+  </aside>
+
+  <div>
+    <h2>Biography</h2>
+    <div class="bio">{{ $p.bio | markdownify }}</div>
+
+    <div class="facts">
+      <div>
+        <h3>Interests</h3>
+        <ul class="bullets">
+          {{ range $p.interests }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <ul class="degrees">
+          {{ range $p.education }}
+            <li>
+              {{ partial "icon.html" "degree" }}
+              <div>
+                {{ .degree }}, {{ if .end }}{{ .end }}{{ else }}{{ .start }}–present{{ end }}
+                <small>{{ .institution }}</small>
+              </div>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

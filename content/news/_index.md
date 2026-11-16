@@ -1,15 +1,12 @@
 ---
+# News items are kept here but are not published.
+# To publish them again, delete the `build` and `cascade` settings below.
 title: News
-cms_exclude: true
-
-# View.
-#   1 = List
-#   2 = Compact
-#   3 = Card
-view: 2
-
-# Optional header image (relative to `static/media/` folder).
-header:
-  caption: ''
-  image: ''
+build:
+  render: never
+  list: never
+cascade:
+  build:
+    render: never
+    list: never
 ---

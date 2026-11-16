@@ -1,0 +1,9 @@
+{{- /* The /publications/ overview page. */ -}}
+{{ define "main" }}
+  <section class="section">
+    <div class="split">
+      <h2>{{ .Title }}</h2>
+      <div>{{ partial "blocks/publication-list.html" . }}</div>
+    </div>
+  </section>
+{{ end }}
